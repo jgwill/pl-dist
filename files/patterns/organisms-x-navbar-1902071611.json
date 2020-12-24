@@ -1,0 +1,50 @@
+{
+	"tstNavBar": [
+		{
+			"navbarBrandText": "STrense",
+			"navbarNavLast": {
+				"navbarNavClass": "navbar-right",
+				"navbarNav": [
+					{
+						"url": "http://chat.afelia.jgwill.com:3012/t/tlid",
+						"text": "My Account"
+					},
+					{
+						"url": "http://afelia.jgwill.com/rns/structural",
+						"text": "Structural Plan"
+					},
+					{
+						"url": "#",
+						"text": "...",
+						"hasDropdown": true,
+						"dropdownMenu": [
+							{
+								"url": "/rscviewing/feedbackview",
+								"text": "Feedbacks"
+							},
+							{
+								"url": "http://afelia.jgwill.com/rns/structural",
+								"text": "RNS Stc"
+							},
+							{
+								"separator": "true"
+							},
+							{
+								"url": "http://afelia.jgwill.com/sl/g/l/admin",
+								"text": "SL admin"
+							},
+							{
+								"url": "http://afelia.jgwill.com/rn/admin/plugins.php?page=rn_share_files_jg",
+								"text": "RN Add Reading"
+							}
+						]
+					}
+				]
+			},
+			"navbarFormData": {
+				"cta": "Rechercher",
+				"placeholder": "Searching..."
+			}
+		}
+	]
+}

@@ -1,0 +1,21 @@
+<!--@ns sk-simple-list SK Simple List-->
+<!--@v * --@v __GOAL__ -->
+
+<!--@cr --@cr _CR_ -->
+ 
+ {{#noteList}}
+<div>
+
+<h2>{{note}}</h2>
+
+<ul>
+
+{{#elements}}
+{{#.}}<li>{{.}}</li>{{/.}}
+
+{{/elements}}
+
+</ul>
+
+</div>
+{{/noteList}}

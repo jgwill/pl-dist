@@ -1,0 +1,76 @@
+
+<!-- CSS -->
+{{>atoms-sk-modal-container-style}}
+<!--@ns sk-modal-box Modal Box-->
+<!--@v * --@v Present a notification or dialog -->
+
+<!--@cr --@cr  Interesting for notifying  -->
+ 
+<div>
+
+<!-- template for the modal component -->
+
+<script type="text/x-template" id="{{modal.id}}">
+  <transition name="modal">
+    <div class="modal-mask">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+
+          <div class="modal-header">
+            <slot name="header">
+              {{modal.header.text}}
+            </slot>
+          </div>
+
+          <div class="modal-body">
+            <slot name="body">
+              {{modal.body.text}}
+            </slot>
+          </div>
+
+          <div class="modal-footer">
+            <slot name="footer">
+              {{modal.footer.text}}
+              <button class="modal-default-button" @click="$emit('close')">
+                {{modal.button.text}}
+              </button>
+              
+            </slot>
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</script>
+
+
+
+<!-- app -->
+<div id="app">
+  <button id="show-modal" class="button-modal" @click="showModal = true">{{modal.button.showmodal}}</button>
+  <!-- use the modal component, pass in the prop -->
+  <modal v-if="showModal" @close="showModal = false">
+    <!--
+      you can use custom content here to overwrite
+      default content
+    -->
+    <h3 slot="header">{{modal.header.text}} </h3>
+  </modal>
+</div>
+
+<script>
+// register modal component
+Vue.component('modal', {
+  template: '#{{modal.id}}'
+})
+
+// start app
+new Vue({
+  el: '#app',
+  data: {
+    showModal: false
+  }
+})
+</script>
+
+</div>

@@ -1,0 +1,42 @@
+{{>atoms-header-html}}
+{{#htmlHeader}}
+{{{htmlHeader}}}
+<body>
+{{/htmlHeader}}
+
+{{#navbar}}
+{{> organisms-navbar}}
+
+{{/navbar}}
+
+{{#patterntest}}
+{{>molecules-alerts}}
+{{/patterntest}}
+
+{{#debug}}
+{{#err}}
+{{err}}
+<hr><br>
+{{/err}}
+{{rscViewName}}
+
+{{/debug}}
+
+{{#alertText }}
+{{> molecules-message-viewer}}
+{{/alertText }}
+
+
+{{ af_url_base }}
+<hr>
+<table>
+{{#results}}
+{{> molecules-feedback-item}}
+{{/results}}
+</table>
+
+
+
+{{#htmlHeader}}
+</body>
+{{/htmlHeader}}

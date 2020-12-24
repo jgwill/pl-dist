@@ -1,0 +1,49 @@
+{
+	"tstNavBar": [
+		{
+			"navbarBrandText": "StrucThor",
+			"navbarNavLast": {
+				"navbarNavClass": "navbar-right",
+				"navbarNav": [
+					{
+						"url": "http://chat.afelia.jgwill.com:3012/t/tlid",
+						"text": "My Account"
+					},
+					{
+						"url": "http://afelia.jgwill.com/rns/structural",
+						"text": "Help"
+					},
+					{
+						"url": "#",
+						"text": "",
+						"hasDropdown": true,
+						"dropdownMenu": [
+							{
+								"url": "link.pages-myprofile",
+								"text": "Edit my Profile"
+							},
+							{
+								"separator": "true"
+							},
+							{
+								"url": "link.pages-my-organizations",
+								"text": "My Organizations"
+							},
+							{
+								"url": "link.pages-new-organization",
+								"text": "New Organization"
+							},
+							{
+								"separator": "true"
+							},
+							{
+								"url": "link.pages-logout",
+								"text": "Logout"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

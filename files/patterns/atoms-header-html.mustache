@@ -1,0 +1,14 @@
+<!--@ns header-html HTML Header for ext rendering-->
+<!--@v * --@v Extenally render the page header HTML -->
+
+
+{{#patterns}}<!--## That above is rendered if we are in context where the data exist -->
+<html><head><title>#TITLE#</title>
+
+		<link rel="stylesheet" href="{{patterns.root}}{{patterns.css}}/bootstrap.css" media="all" />
+		
+		<link rel="stylesheet" href="{{patterns.root}}{{patterns.css}}/bootstrap-theme.css" media="all" />
+		
+		<!--@q testing -->
+</head>
+{{/patterns}}
